@@ -1,0 +1,28 @@
+header{
+background: #181818;
+padding-top: 1em;
+
+}
+.cart {
+    padding: 0 10rem 0 0  ;
+}
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+a.logo {
+
+    padding: 0 0 0 10rem;
+    
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+
+}
+nav ul li a{
+    padding: 2em;
+    display: inline-block;
+}

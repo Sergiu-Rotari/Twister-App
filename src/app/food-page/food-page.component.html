@@ -1,0 +1,36 @@
+<app-not-found [visible] = "!food" notFoundMessage ="Nu ați selectat niciun produs"
+resetLinkText="Pagina de start"></app-not-found>
+<div *ngIf="food" class="container">
+    <img [src]="food.imageUrl" [alt]="food.name"/>
+    <div class="details">
+        <div class="header">
+            <span class="name">
+                {{food.name}}
+            </span>
+
+        </div>
+        <div class="description">
+            <span class="description">
+                {{food.description}}
+            </span>
+        </div>
+        <div class="tags">
+            <app-tags [foodPageTags]="food.tags" justifyContent = "start"></app-tags>
+        </div>
+        <div class="footer">
+            <div class="price">
+                {{ food.price | priceFormat }}
+            </div>
+            <div class="weight">
+                <span>{{ food.weight }}</span>
+            </div>
+            <a (click)="addToCart()" class="add-btn addToCart">
+                <span class="add">în coș</span>
+                <span class="plus">
+                    <span>+</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+div{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+div a{
+    background-color: black;
+    padding: .3rem 1rem;
+    margin: .2rem .15rem;
+    border-radius: 10rem;
+    font-weight: 400;
+    color: aliceblue;
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+   
+div a:hover {
+    transform: scale(1.03); 
+}
