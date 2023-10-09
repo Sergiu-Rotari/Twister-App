@@ -1,28 +1,18 @@
-header{
-background: #181818;
-padding-top: 1em;
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 10rem 1.5rem 10rem;
+  background-color: #000000;
 }
-.cart {
-    padding: 0 10rem 0 0  ;
+.left {
+  flex: 1;
 }
-.container {
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+.right {
+  margin-left: auto;
 }
 
-a.logo {
-
-    padding: 0 0 0 10rem;
-    
-}
-nav ul {
-    list-style-type: none;
-    margin: 0;
-
-}
-nav ul li a{
-    padding: 2em;
-    display: inline-block;
+.logo, .cart {
+  height: 40px;
 }
